@@ -1,0 +1,2589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="UpdatePullRequestReviewInput GraphQL documentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>UpdatePullRequestReviewInput</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>
+
+    // Add anchors on DOMContentLoaded
+    document.addEventListener("DOMContentLoaded", function(event) {
+      anchors.options = {
+        placement: 'left',
+        visible: 'hover',
+        icon: '¶'
+      };
+      anchors.add('h3');
+    });
+
+    </script>
+  </head>
+  <body>
+
+    <div id="wrap">
+      <div id="header">
+      </div>
+      <div id="sidebar">
+        <ul class="categories">
+  <li>
+    <ul class="menu-root">
+      <li>
+        <a href="/">GraphQL Reference</a>
+    </ul>
+  </li>
+
+  <li>
+    <p>Queries</p>
+    <ul class="menu-root">
+      <li>
+        <a href="/object/query/" class="sidebar-link">
+          RootQuery
+        </a>
+      </li>
+      <li>
+        <a href="/object/mutation" class="sidebar-link">
+          Mutation
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <p>Objects</p>
+    <ul class="menu-root">
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/addcommentpayload/index.html" class="sidebar-link">
+          AddCommentPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/addprojectcardpayload/index.html" class="sidebar-link">
+          AddProjectCardPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/addprojectcolumnpayload/index.html" class="sidebar-link">
+          AddProjectColumnPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/addpullrequestreviewcommentpayload/index.html" class="sidebar-link">
+          AddPullRequestReviewCommentPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/addpullrequestreviewpayload/index.html" class="sidebar-link">
+          AddPullRequestReviewPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/addreactionpayload/index.html" class="sidebar-link">
+          AddReactionPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/assignedevent/index.html" class="sidebar-link">
+          AssignedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/baserefforcepushedevent/index.html" class="sidebar-link">
+          BaseRefForcePushedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/blame/index.html" class="sidebar-link">
+          Blame
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/blamerange/index.html" class="sidebar-link">
+          BlameRange
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/blob/index.html" class="sidebar-link">
+          Blob
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/closedevent/index.html" class="sidebar-link">
+          ClosedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/commit/index.html" class="sidebar-link">
+          Commit
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/commitcomment/index.html" class="sidebar-link">
+          CommitComment
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/createprojectpayload/index.html" class="sidebar-link">
+          CreateProjectPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/deleteprojectcardpayload/index.html" class="sidebar-link">
+          DeleteProjectCardPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/deleteprojectcolumnpayload/index.html" class="sidebar-link">
+          DeleteProjectColumnPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/deleteprojectpayload/index.html" class="sidebar-link">
+          DeleteProjectPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/deletepullrequestreviewpayload/index.html" class="sidebar-link">
+          DeletePullRequestReviewPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/demilestonedevent/index.html" class="sidebar-link">
+          DemilestonedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/deployedevent/index.html" class="sidebar-link">
+          DeployedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/deployment/index.html" class="sidebar-link">
+          Deployment
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/deploymentstatus/index.html" class="sidebar-link">
+          DeploymentStatus
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/dismisspullrequestreviewpayload/index.html" class="sidebar-link">
+          DismissPullRequestReviewPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/gist/index.html" class="sidebar-link">
+          Gist
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/gistcomment/index.html" class="sidebar-link">
+          GistComment
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/gitactor/index.html" class="sidebar-link">
+          GitActor
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/gpgsignature/index.html" class="sidebar-link">
+          GpgSignature
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/headrefdeletedevent/index.html" class="sidebar-link">
+          HeadRefDeletedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/headrefforcepushedevent/index.html" class="sidebar-link">
+          HeadRefForcePushedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/headrefrestoredevent/index.html" class="sidebar-link">
+          HeadRefRestoredEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/issue/index.html" class="sidebar-link">
+          Issue
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/issuecomment/index.html" class="sidebar-link">
+          IssueComment
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/label/index.html" class="sidebar-link">
+          Label
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/labeledevent/index.html" class="sidebar-link">
+          LabeledEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/language/index.html" class="sidebar-link">
+          Language
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/lockedevent/index.html" class="sidebar-link">
+          LockedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/mentionedevent/index.html" class="sidebar-link">
+          MentionedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/mergedevent/index.html" class="sidebar-link">
+          MergedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/milestone/index.html" class="sidebar-link">
+          Milestone
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/milestonedevent/index.html" class="sidebar-link">
+          MilestonedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/moveprojectcardpayload/index.html" class="sidebar-link">
+          MoveProjectCardPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/moveprojectcolumnpayload/index.html" class="sidebar-link">
+          MoveProjectColumnPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/mutation/index.html" class="sidebar-link">
+          Mutation
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/organization/index.html" class="sidebar-link">
+          Organization
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/organizationinvitation/index.html" class="sidebar-link">
+          OrganizationInvitation
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/pageinfo/index.html" class="sidebar-link">
+          PageInfo
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/project/index.html" class="sidebar-link">
+          Project
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/projectcard/index.html" class="sidebar-link">
+          ProjectCard
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/projectcolumn/index.html" class="sidebar-link">
+          ProjectColumn
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/pullrequest/index.html" class="sidebar-link">
+          PullRequest
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/pullrequestreview/index.html" class="sidebar-link">
+          PullRequestReview
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/pullrequestreviewcomment/index.html" class="sidebar-link">
+          PullRequestReviewComment
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/pullrequestreviewthread/index.html" class="sidebar-link">
+          PullRequestReviewThread
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/query/index.html" class="sidebar-link">
+          Query
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/reaction/index.html" class="sidebar-link">
+          Reaction
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/reactiongroup/index.html" class="sidebar-link">
+          ReactionGroup
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/ref/index.html" class="sidebar-link">
+          Ref
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/referencedevent/index.html" class="sidebar-link">
+          ReferencedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/release/index.html" class="sidebar-link">
+          Release
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/releaseasset/index.html" class="sidebar-link">
+          ReleaseAsset
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/removeoutsidecollaboratorpayload/index.html" class="sidebar-link">
+          RemoveOutsideCollaboratorPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/removereactionpayload/index.html" class="sidebar-link">
+          RemoveReactionPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/renamedevent/index.html" class="sidebar-link">
+          RenamedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/reopenedevent/index.html" class="sidebar-link">
+          ReopenedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/repository/index.html" class="sidebar-link">
+          Repository
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/repositoryinvitation/index.html" class="sidebar-link">
+          RepositoryInvitation
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/repositoryinvitationrepository/index.html" class="sidebar-link">
+          RepositoryInvitationRepository
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/requestreviewspayload/index.html" class="sidebar-link">
+          RequestReviewsPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/reviewrequest/index.html" class="sidebar-link">
+          ReviewRequest
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/smimesignature/index.html" class="sidebar-link">
+          SmimeSignature
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/status/index.html" class="sidebar-link">
+          Status
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/statuscontext/index.html" class="sidebar-link">
+          StatusContext
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/submitpullrequestreviewpayload/index.html" class="sidebar-link">
+          SubmitPullRequestReviewPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/subscribedevent/index.html" class="sidebar-link">
+          SubscribedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/tag/index.html" class="sidebar-link">
+          Tag
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/team/index.html" class="sidebar-link">
+          Team
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/tree/index.html" class="sidebar-link">
+          Tree
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/treeentry/index.html" class="sidebar-link">
+          TreeEntry
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/unassignedevent/index.html" class="sidebar-link">
+          UnassignedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/unknownsignature/index.html" class="sidebar-link">
+          UnknownSignature
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/unlabeledevent/index.html" class="sidebar-link">
+          UnlabeledEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/unlockedevent/index.html" class="sidebar-link">
+          UnlockedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/unsubscribedevent/index.html" class="sidebar-link">
+          UnsubscribedEvent
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/updateprojectcardpayload/index.html" class="sidebar-link">
+          UpdateProjectCardPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/updateprojectcolumnpayload/index.html" class="sidebar-link">
+          UpdateProjectColumnPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/updateprojectpayload/index.html" class="sidebar-link">
+          UpdateProjectPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/updatepullrequestreviewcommentpayload/index.html" class="sidebar-link">
+          UpdatePullRequestReviewCommentPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/updatepullrequestreviewpayload/index.html" class="sidebar-link">
+          UpdatePullRequestReviewPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/updatesubscriptionpayload/index.html" class="sidebar-link">
+          UpdateSubscriptionPayload
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+
+        <!-- skip root query stuff -->
+        
+
+      <li>
+        <a href="/object/user/index.html" class="sidebar-link">
+          User
+        </a>
+      </li>
+      
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+          
+        
+        <!-- skip connection stuff -->
+        
+
+        <!-- skip metadata stuff -->
+        
+          
+    </ul>
+  </li>
+
+  <li>
+    <p>Interfaces</p>
+    <ul class="menu-root">
+      
+        
+        <li>
+          <a href="/interface/comment/index.html" class="sidebar-link">
+            Comment
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/gitobject/index.html" class="sidebar-link">
+            GitObject
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/gitsignature/index.html" class="sidebar-link">
+            GitSignature
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/issueevent/index.html" class="sidebar-link">
+            IssueEvent
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/issueish/index.html" class="sidebar-link">
+            Issueish
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/node/index.html" class="sidebar-link">
+            Node
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/projectowner/index.html" class="sidebar-link">
+            ProjectOwner
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/reactable/index.html" class="sidebar-link">
+            Reactable
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/repositoryinfo/index.html" class="sidebar-link">
+            RepositoryInfo
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/repositorynode/index.html" class="sidebar-link">
+            RepositoryNode
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/repositoryowner/index.html" class="sidebar-link">
+            RepositoryOwner
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/subscribable/index.html" class="sidebar-link">
+            Subscribable
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/timeline/index.html" class="sidebar-link">
+            Timeline
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/interface/uniformresourcelocatable/index.html" class="sidebar-link">
+            UniformResourceLocatable
+          </a>
+        </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p>Enums</p>
+    <ul class="menu-root">
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/commentcannoteditreason/index.html" class="sidebar-link">
+          CommentCannotEditReason
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/defaultrepositorypermissionfield/index.html" class="sidebar-link">
+          DefaultRepositoryPermissionField
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/deploymentstate/index.html" class="sidebar-link">
+          DeploymentState
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/gistvisibility/index.html" class="sidebar-link">
+          GistVisibility
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/gitsignaturestate/index.html" class="sidebar-link">
+          GitSignatureState
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/issueeventtype/index.html" class="sidebar-link">
+          IssueEventType
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/issuepubsubtopic/index.html" class="sidebar-link">
+          IssuePubSubTopic
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/issuestate/index.html" class="sidebar-link">
+          IssueState
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/languageorderfield/index.html" class="sidebar-link">
+          LanguageOrderField
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/milestonestate/index.html" class="sidebar-link">
+          MilestoneState
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/orderdirection/index.html" class="sidebar-link">
+          OrderDirection
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/organizationinvitationrole/index.html" class="sidebar-link">
+          OrganizationInvitationRole
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/projectcardstate/index.html" class="sidebar-link">
+          ProjectCardState
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/projectorderfield/index.html" class="sidebar-link">
+          ProjectOrderField
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/pullrequestpubsubtopic/index.html" class="sidebar-link">
+          PullRequestPubSubTopic
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/pullrequestreviewevent/index.html" class="sidebar-link">
+          PullRequestReviewEvent
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/pullrequestreviewstate/index.html" class="sidebar-link">
+          PullRequestReviewState
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/pullrequeststate/index.html" class="sidebar-link">
+          PullRequestState
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/reactioncontent/index.html" class="sidebar-link">
+          ReactionContent
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/reactionorderfield/index.html" class="sidebar-link">
+          ReactionOrderField
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/repositorycollaboratoraffiliation/index.html" class="sidebar-link">
+          RepositoryCollaboratorAffiliation
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/repositorylockreason/index.html" class="sidebar-link">
+          RepositoryLockReason
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/repositoryorderfield/index.html" class="sidebar-link">
+          RepositoryOrderField
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/repositoryprivacy/index.html" class="sidebar-link">
+          RepositoryPrivacy
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/searchtype/index.html" class="sidebar-link">
+          SearchType
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/starorderfield/index.html" class="sidebar-link">
+          StarOrderField
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/statusstate/index.html" class="sidebar-link">
+          StatusState
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/subscriptionstate/index.html" class="sidebar-link">
+          SubscriptionState
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+      <li>
+        <a href="/enum/teamprivacy/index.html" class="sidebar-link">
+          TeamPrivacy
+        </a>
+      </li>
+      
+      
+      <!-- skip metadata stuff -->
+      
+        
+      
+      <!-- skip metadata stuff -->
+      
+        
+    </ul>
+  </li>
+
+  <li>
+    <p>Unions</p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/union/issuetimelineitem/index.html" class="sidebar-link">
+          IssueTimelineItem
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/union/projectcarditem/index.html" class="sidebar-link">
+          ProjectCardItem
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/union/searchresultitem/index.html" class="sidebar-link">
+          SearchResultItem
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p>Input Objects</p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/input_object/addcommentinput/index.html" class="sidebar-link">
+          AddCommentInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/addprojectcardinput/index.html" class="sidebar-link">
+          AddProjectCardInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/addprojectcolumninput/index.html" class="sidebar-link">
+          AddProjectColumnInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/addpullrequestreviewcommentinput/index.html" class="sidebar-link">
+          AddPullRequestReviewCommentInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/addpullrequestreviewinput/index.html" class="sidebar-link">
+          AddPullRequestReviewInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/addreactioninput/index.html" class="sidebar-link">
+          AddReactionInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/author/index.html" class="sidebar-link">
+          Author
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/createprojectinput/index.html" class="sidebar-link">
+          CreateProjectInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/deleteprojectcardinput/index.html" class="sidebar-link">
+          DeleteProjectCardInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/deleteprojectcolumninput/index.html" class="sidebar-link">
+          DeleteProjectColumnInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/deleteprojectinput/index.html" class="sidebar-link">
+          DeleteProjectInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/deletepullrequestreviewinput/index.html" class="sidebar-link">
+          DeletePullRequestReviewInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/dismisspullrequestreviewinput/index.html" class="sidebar-link">
+          DismissPullRequestReviewInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/draftpullrequestreviewcomment/index.html" class="sidebar-link">
+          DraftPullRequestReviewComment
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/languageorder/index.html" class="sidebar-link">
+          LanguageOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/moveprojectcardinput/index.html" class="sidebar-link">
+          MoveProjectCardInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/moveprojectcolumninput/index.html" class="sidebar-link">
+          MoveProjectColumnInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/projectorder/index.html" class="sidebar-link">
+          ProjectOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/reactionorder/index.html" class="sidebar-link">
+          ReactionOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/removeoutsidecollaboratorinput/index.html" class="sidebar-link">
+          RemoveOutsideCollaboratorInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/removereactioninput/index.html" class="sidebar-link">
+          RemoveReactionInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/repositoryorder/index.html" class="sidebar-link">
+          RepositoryOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/requestreviewsinput/index.html" class="sidebar-link">
+          RequestReviewsInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/starorder/index.html" class="sidebar-link">
+          StarOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/submitpullrequestreviewinput/index.html" class="sidebar-link">
+          SubmitPullRequestReviewInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/updateprojectcardinput/index.html" class="sidebar-link">
+          UpdateProjectCardInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/updateprojectcolumninput/index.html" class="sidebar-link">
+          UpdateProjectColumnInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/updateprojectinput/index.html" class="sidebar-link">
+          UpdateProjectInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/updatepullrequestreviewcommentinput/index.html" class="sidebar-link">
+          UpdatePullRequestReviewCommentInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/updatepullrequestreviewinput/index.html" class="sidebar-link">
+          UpdatePullRequestReviewInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/input_object/updatesubscriptioninput/index.html" class="sidebar-link">
+          UpdateSubscriptionInput
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p>Scalars</p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/scalar/boolean/index.html" class="sidebar-link">
+          Boolean
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/scalar/datetime/index.html" class="sidebar-link">
+          DateTime
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/scalar/float/index.html" class="sidebar-link">
+          Float
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/scalar/gitobjectid/index.html" class="sidebar-link">
+          GitObjectID
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/scalar/gittimestamp/index.html" class="sidebar-link">
+          GitTimestamp
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/scalar/html/index.html" class="sidebar-link">
+          HTML
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/scalar/id/index.html" class="sidebar-link">
+          ID
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/scalar/int/index.html" class="sidebar-link">
+          Int
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/scalar/string/index.html" class="sidebar-link">
+          String
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/scalar/uri/index.html" class="sidebar-link">
+          URI
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/scalar/x509certificate/index.html" class="sidebar-link">
+          X509Certificate
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+      </div>
+      <div id="content">
+
+        <h2>
+<a id="updatepullrequestreviewinput" class="anchor" href="#updatepullrequestreviewinput" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>UpdatePullRequestReviewInput</h2>
+
+<p>Autogenerated input type of UpdatePullRequestReview</p>
+
+<h3>
+<a id="input-fields" class="anchor" href="#input-fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Input Fields</h3>
+
+<div class="field-entry">
+  
+
+  
+    
+    
+  
+
+  <span class="field-name">clientMutationId (<a href="/scalar/string"><code>String</code></a>)</span>
+
+  <div class="description-wrapper">
+    A unique identifier for the client performing the mutation.
+
+    
+  </div>
+</div>
+
+<div class="field-entry">
+  
+
+  
+    
+    
+  
+
+  <span class="field-name">pullRequestReviewId (<a href="/scalar/id"><code>ID</code></a>)</span>
+
+  <div class="description-wrapper">
+    The Node ID of the pull request review to modify.
+
+    
+  </div>
+</div>
+
+<div class="field-entry">
+  
+
+  
+    
+    
+  
+
+  <span class="field-name">body (<a href="/scalar/string"><code>String</code></a>)</span>
+
+  <div class="description-wrapper">
+    The contents of the pull request review body.
+
+    
+  </div>
+</div>
+
+      </div>
+
+      <!-- mobile only -->
+      <div id="mobile-header">
+        <a class="menu-button"></a>
+        <a class="logo" href="/">
+
+        </a>
+      </div>
+      <div id="mobile-shade"></div>
+
+    </div>
+
+  </body>
+</html>
