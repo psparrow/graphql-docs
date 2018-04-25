@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'graphql', '~> 1.6'
 
   # rendering
+  spec.add_dependency 'commonmarker', '~> 0.16'
   spec.add_dependency 'html-pipeline', '~> 2.2'
   spec.add_dependency 'extended-markdown-filter', '~> 0.4'
   spec.add_dependency 'gemoji', '~> 3.0'
@@ -35,6 +36,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'minitest-focus', '~> 1.1'
   spec.add_development_dependency 'pry', '~> 0.10.0'
   spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'rubocop-github'
   spec.add_development_dependency 'webmock', '~> 2.3'
 end
